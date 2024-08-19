@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="PR2: A Physics- and Photo-realistic Humanoid Testbed with Pilot Study in Competition"> 
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <title>PR2</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+.btn {
+  background-color: Gray;
+  border: none;
+  color: white;
+  padding: 12px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.is-rounded {border-radius: 12px;}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: Silver;
+}
+
+a {
+	color: inherit;
+    text-decoration: none;
+}
+
+.centered {
+  text-align: center;
+}
+
+.publication-video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+
+  overflow: hidden;
+  border-radius: 10px !important;
+}
+
+.publication-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+img.responsive-image {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* For smaller screens */
+  @media (max-width: 768px) {
+    img.responsive-image {
+      width: 100%; /* Full width on small screens */
+    }
+  }
+
+  /* For very large screens */
+  @media (min-width: 1200px) {
+    img.responsive-image {
+      width: 60%; /* Smaller width on large screens */
+    }
+  }
+
+  .section, .hero {
+      width: 80%;
+      margin: 0 auto;
+    }
+    .hero-body, .container {
+      width: 100%;
+    }
+    .columns, .rows {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .column, .row {
+      width: 100%;
+    }
+    .title.is-1, .title.is-4 {
+      text-align: center;
+    }
+    .publication-links, .publication-authors {
+      text-align: center;
+    }
+    
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+<link rel="stylesheet" href="static/css/index.css">
+<script src="https://kit.fontawesome.com/b25d0fd750.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+function UpdateTaskIllustration() {
+  var task = document.getElementById("illu-task").value;
+  console.log("illu", task)
+  var img = document.getElementById("task-illustration");
+  img.src = "assets/" + "illu-" + task + ".png"
+}
+
+function UpdateTaskDemonstration() {
+  var task = document.getElementById("demo-task").value;
+  console.log("demo", task)
+  var video = document.getElementById("task-demonstration");
+  video.src = "assets/" + "demo-" + task + ".mp4"
+  video.playbackRate = 1.75;
+  video.play();
+}
+</script>
+
+</head>
+
+<body onload="UpdateTaskIllustration(); UpdateTaskDemonstration();">
+
+  <section class="hero" style="width: 90%; margin: 0 auto;">
+    <div class="hero-body">
+      <div class="container" style="width: 100%;">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">PR2: A Physics- and Photo-realistic Humanoid Testbed with Pilot Study in Competition</h1>
+            <h3 class="title is-4 conference-authors"><a target="_blank" href=" "> </a></h3>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a target="_blank" href="https://liuhx111.github.io/">Hangxin Liu</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a target="_blank" href="https://github.com/sudoku77">Qi Xie</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a target="_blank" href="https://zeyuzhang.com">Zeyu Zhang</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a target="_blank" href=" ">Tao Yuan</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a target="_blank" href=" ">Xiaokun Leng</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a target="_blank" href=" ">Lining Sun</a><sup>2,5</sup>,</span>
+              <br/>
+              <span class="author-block">
+                <a target="_blank" href=" ">Song-Chun Zhu</a><sup>1,3,4</sup>,</span>
+              <span class="author-block">
+                <a target="_blank" href="https://jingwen-zhang-aaron.github.io/">Jingwen Zhang</a><sup>1✉️ </sup>,</span>
+              <span class="author-block">
+                <a target="_blank" href=" ">Zhicheng He</a><sup>2✉️ </sup>,</span>
+              <span class="author-block">
+                <a target="_blank" href="https://yaosu.info/">Yao Su</a><sup>1✉️ </sup>,</span>
+            </div>
+  
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>State Key Laboratory of General Artificial Intelligence, BIGAI, </span>
+              <span class="author-block"><sup>2</sup>Harbin Institute of Technology, </span>
+              <span class="author-block"><sup>3</sup>Peking University, </span>
+              <span class="author-block"><sup>4</sup>Tsinghua University, </span>
+              <br/>
+              <span class="author-block"><sup>5</sup>Jiangsu Provincial Key Laboratory of Advanced Robotics, School of Mechanical and Electric Engineering, Soochow University, </span>
+            </div>
+  
+            <p style="font-size: 0.9em; padding: 0.5em 0 0 0;">✉️ indicates corresponding author</p>
+  
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv Link -->
+                <span class="link-block">
+                  <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-file"></i></span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+  
+                <!-- Code Link -->
+                <span class="link-block">
+                  <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-github"></i></span>
+                    <span>Code</span>
+                  </a>
+                </span>
+  
+                <!-- Video Link -->
+                <span class="link-block">
+                  <a target="_blank" href=" " class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fab fa-youtube"></i></span>
+                    <span>Video</span>
+                  </a>
+                </span>
+  
+                <!-- Compete Link
+                <span class="link-block">
+                  <a target="_blank" href="https://sites.google.com/view/arnoldchallenge/" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon"><i class="fas fa-trophy"></i></span>
+                    <span>Challenge</span>
+                  </a>
+                </span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="hero teaser" style="margin-top: -1rem;">
+    <div class="container is-fullhd">
+      <div class="hero-body">
+        <div class="container">
+          <div class="has-text-centered" style="padding: 0 1em;"> 
+            <img src="assets/teaser.png" style="width: 80%; display: block; margin: 0 auto;"/>
+   
+            <div class="content has-text-justified " style="width: 80%; margin: 1em auto;">
+                <p>
+                    We present PR2, a humanoid robot testbed that evaluates a humanoid robot testbed designed for entry-level students with supports in 
+                    <span style="color: #EC407A; font-weight: bold">bipedal locomotion</span>, 
+                    <span style="color: #03A9F4; font-weight: bold">multi-modal manipulation</span>, and 
+                    <span style="color: #FF7043; font-weight: bold">interaction with vision and language foundation models</span>.
+                  </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section class="section " style="margin-top: -2rem;">
+  <div class="container is-max-desktop">
+   
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This paper presents the development of <b>PR2</b>, a physics-realistic and photo-realistic humanoid robot testbed, 
+            designed to facilitate the collaboration between Embodied Artificial Intelligence (Embodied AI) and humanoid robotics. 
+            PR2 offers high-quality scene rendering and dynamic robot simulation, enabling (i) The creation of diverse scenes 
+            with various digital assets, (ii) the integration of advanced perception or foundation models, and (iii) the implementation 
+            of planning and control algorithms for dynamic humanoid robot behaviors based on environmental feedback. 
+  
+           
+            This testbed opens new avenues for research into task-oriented humanoid perception and locomotion. 
+            The beta version of PR2 has been deployed for the simulation track of <span style="color: #EC407A; font-weight: bold"> a nationwide full-size humanoid robot competition for college students, 
+            attracting 137 teams and over 400 participants within four months </span> . This competition covered traditional tasks in bipedal walking, 
+            as well as novel challenges in loco-manipulation and language-instruction-based object search, marking a first for public college robotics competitions. A retrospective analysis suggests that future competitions should emphasize the integration of locomotion with manipulation and perception. 
+            By making the PR2 testbed publicly available at <a href="https://github.com/pr2-humanoid/pr2-humanoid.github.io"><b>PR2</b> website</a>, we aim to further advance education and training in humanoid robotics.   
+           </p>
+        </div>
+      </div>
+    </div>
+
+<br>
+<br>
+    <h3 class="title is-4" style="margin-top: 2rem;">Competition Trials</h3>
+    <div style="display: flex; align-items: stretch;">  
+      
+        <div style="width: 80%; display: flex; align-items: stretch; padding-right: 30px;">
+            <img src="assets/task_spec.png" style="width: 100%; height: auto; max-height: 100%;">
+          </div>
+          <div style="width: 40%; font-size: 0.9em; ">
+            <p> To comprehensively address humanoid locomotion, manipulation, and the integration of AI techniques while maintaining a moderate level of difficulty, we designed six distinct
+              tasks, The basic walking controller, jumping controller, and step climbing controller are provided according
+              to task specifications. Task-related feedbacks are generated by the PR2 physics simulation during robot execution.
+            </p>
+          </div>
+    </div>
+
+  
+       
+
+     
+
+ <br>
+ <br>
+        <h3 class="title is-4" style="margin-top: 2rem;">System Architecture</h3>
+        <div style="display: flex; align-items: stretch;">  
+            <div style="width: 70%; padding-right: 20px; font-size: 1em;">
+              <p><b>PR2</b> is built on <a target="_blank" href="https://developer.nvidia.com/isaac-sim">Isaac Sim</a>, which leverages
+                advanced GPU-enabled graphics and physics simulation with
+                Nvidia PhysX 5, enabling users to investigate and test robotic
+                skills in a physics-realistic and photo-realistic simulation environment. Designed to be modular, PR2 simplifies workflows
+                in interacting with humanoid robots with an easy-to-use interface for users. In addition to inheriting the capabilities of
+                Omniverse, PR2 consists of four main components: (i) the rendering module and (ii) the simulation
+                module, both built on Nvidia’s Omniverse and PhysX, respectively.
+                These modules support the import of various digital assets to create
+                diverse task environments and simulate physical effects such as forces
+                and system dynamics. Additionally, (iii) built-in model predictive and
+                whole-body controllers and (iv) high-level planners are provided for
+                beginners but can be replaced by more advanced users as needed.
+              </p>
+            </div>
+
+      
+           <div style="width: 40%; display: flex; align-items: stretch;">
+              <img src="assets/sys_arch_img.png" style="width: 100%; height: auto; max-height: 100%;">
+            </div>
+          </div>
+
+        <h3 class="title is-4" style="margin-top: 2rem;">Acknowledgments</h3>
+        <div class="has-text-centered">
+          <p style="text-align: justify;">
+            We thank the engineering team from Leju Robotics for technical support, Ms. Zhen Chen from BIGAI for refining the figures, and all colleagues from the BIGAI TongVerse project for fruitful discussions and help on simulation developments.
+          </p>
+        </div>
+
+
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- <section class="section" id="BibTeX">
+  <div class="container is-max-widescreen content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code class="language-bibtex">@inproceedings{gong2023arnold,
+  title={ARNOLD: A Benchmark for Language-Grounded Task Learning With Continuous States in Realistic 3D Scenes},
+  author={Gong, Ran and Huang, Jiangyong and Zhao, Yizhou and Geng, Haoran and Gao, Xiaofeng and Wu, Qingyang and Ai, Wensi and Zhou, Ziheng and Terzopoulos, Demetri and Zhu, Song-Chun and others},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV)},
+  year={2023}
+}</code></pre>
+  </div>
+</section> -->
+
+
+</body>
+</html>
