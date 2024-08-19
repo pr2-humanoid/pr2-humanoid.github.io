@@ -33,15 +33,15 @@ We present PR2, a humanoid robot testbed that evaluates a humanoid robot testbed
 
 * **<span style="color: #FF7043;">interaction with vision and language foundation models</span>**
  
-PR2</b> is built on <a target="_blank" href="https://developer.nvidia.com/isaac-sim">Isaac Sim</a>, which leverages
-advanced GPU-enabled graphics and physics simulation with
-Nvidia PhysX 5, enabling users to investigate and test robotic
-skills in a physics-realistic and photo-realistic simulation environment. Designed to be modular, PR2 simplifies workflows
-in interacting with humanoid robots with an easy-to-use interface for users. In addition to inheriting the capabilities of
-Omniverse, PR2 consists of four main components: (i) the rendering module and (ii) the simulation
-module, both built on Nvidia’s Omniverse and PhysX, respectively.
-These modules support the import of various digital assets to create
-diverse task environments and simulate physical effects such as forces
-and system dynamics. Additionally, (iii) built-in model predictive and
-whole-body controllers and (iv) high-level planners are provided for
-beginners but can be replaced by more advanced users as needed.
+<b>PR2</b>, a physics-realistic and photo-realistic humanoid robot testbed, 
+is designed to facilitate the collaboration between Embodied Artificial Intelligence (Embodied AI) and humanoid robotics. 
+PR2 offers high-quality scene rendering and dynamic robot simulation, enabling (i) The creation of diverse scenes 
+with various digital assets, (ii) the integration of advanced perception or foundation models, and (iii) the implementation 
+of planning and control algorithms for dynamic humanoid robot behaviors based on environmental feedback. 
+
+
+This testbed opens new avenues for research into task-oriented humanoid perception and locomotion. 
+The beta version of PR2 has been deployed for the simulation track of <span style="color: #EC407A; font-weight: bold"> a nationwide full-size humanoid robot competition for college students, 
+attracting 137 teams and over 400 participants within four months </span> . This competition covered traditional tasks in bipedal walking, 
+as well as novel challenges in loco-manipulation and language-instruction-based object search, marking a first for public college robotics competitions. A retrospective analysis suggests that future competitions should emphasize the integration of locomotion with manipulation and perception. 
+By making the PR2 testbed publicly available at <a href="https://pr2-humanoid.github.io/"><b>PR2</b> website</a>, we aim to further advance education and training in humanoid robotics.   
