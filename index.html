@@ -8,6 +8,7 @@
   <!-- Include jQuery -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
+  
   <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
   <!-- Google Fonts -->
@@ -15,7 +16,7 @@
   <!-- MDB -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.3.2/mdb.min.css" rel="stylesheet" />
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-  <title>PR2</title>
+  <title>PR2-humanoid</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap">
   <!-- Add icon library -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -122,6 +123,36 @@
     .publication-authors {
       text-align: center;
     }
+
+    .color-boxes {
+      display: flex;
+      /* Align boxes horizontally */
+      gap: 10px;
+      /* Space between boxes */
+    }
+
+    .color-box {
+      width: 30px;
+      /* Width of each box */
+      height: 20px;
+      /* Height of each box */
+
+    }
+
+    .box-1 {
+      background-color: #b3b7ee;
+      /* Color of the first box */
+    }
+
+    .box-2 {
+      background-color: #ea9ab2;
+      /* Color of the second box */
+    }
+
+    .box-3 {
+      background-color: #ebd9fc;
+      /* Color of the third box */
+    }
   </style>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
@@ -171,9 +202,9 @@
               <span class="author-block">
                 <a target="_blank" href="https://i.yt.sb/">Tao Yuan</a><sup>1</sup>,</span>
               <span class="author-block">
-                <a target="_blank" href=" ">Xiaokun Leng</a><sup>2</sup>,</span>
+                <a target="_blank">Xiaokun Leng</a><sup>2</sup>,</span>
               <span class="author-block">
-                <a target="_blank" href=" ">Lining Sun</a><sup>3,4</sup>,</span>
+                <a target="_blank">Lining Sun</a><sup>3,4</sup>,</span>
               <br />
               <span class="author-block">
                 <a target="_blank" href="https://www.zhusongchun.net/">Song-Chun Zhu</a><sup>1,5,6</sup>,</span>
@@ -181,7 +212,7 @@
                 <a target="_blank" href="https://jingwen-zhang-aaron.github.io/">Jingwen Zhang</a><sup>1✉️
                 </sup>,</span>
               <span class="author-block">
-                <a target="_blank" href=" ">Zhicheng He</a><sup>2✉️ </sup>,</span>
+                <a target="_blank">Zhicheng He</a><sup>2✉️ </sup>,</span>
               <span class="author-block">
                 <a target="_blank" href="https://yaosu.info/">Yao Su</a><sup>1✉️ </sup>,</span>
             </div>
@@ -217,7 +248,8 @@
 
                 <!-- Code Link -->
                 <span class="link-block">
-                  <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
+                  <a target="_blank" href="https://github.com/pr2-humanoid/PR2-Platform"
+                    class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="fab fa-github"></i></span>
                     <span>Code</span>
                   </a>
@@ -225,7 +257,7 @@
 
                 <!-- Video Link -->
                 <span class="link-block">
-                  <a target="_blank" href=" " class="external-link button is-normal is-rounded is-dark">
+                  <a target="_blank" href="https://www.youtube.com/watch?v=VycZ9Po9hNg" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="fab fa-youtube"></i></span>
                     <span>Video</span>
                   </a>
@@ -279,7 +311,7 @@
               <!-- Single item -->
               <div class="carousel-item active">
                 <video class="img-fluid" autoplay loop muted>
-                  <source src="https://mdbcdn.b-cdn.net/img/video/Tropical.mp4" type="video/mp4" />
+                  <source src="https://www.youtube.com/watch?v=VycZ9Po9hNg" type="video/mp4" />
                 </video>
                 <div class="carousel-caption d-none d-md-block">
                   <h5>PR2</h5>
@@ -300,22 +332,26 @@
           <h2 class="title is-3 has-text-centered">Abstract</h2>
           <div class="content has-text-justified">
             <p>
-              This paper introduces PR2, a humanoid robot testbed that combines physics-based realism with
-              photo-realistic rendering, designed to advance collaborative research at the intersection of Embodied
-              Artificial Intelligence (Embodied AI) and robotics. PR2 offers high-quality scene rendering and robot
-              dynamic simulation,
-              enabling (i) the creation of diverse scenes using various digital assets, (ii) the integration of advanced
-              perception or foundation models, and (iii) the implementation of
-              planning and control algorithms for dynamic humanoid robot behaviors based on
-              environmental feedback. The beta version of PR2 has been deployed for the simulation track of a
-              nationwide full-size humanoid robot competition for college students, attracting
-              137 teams and over 400 participants within four months. This competition covered traditional tasks in
-              bipedal walking, as well as novel challenges in loco-manipulation and language-instruction-based
-              object search, marking a first for public college robotics competitions. A retrospective
-              analysis of the competition suggests that future events should emphasize the integration of
-              locomotion with manipulation and perception. By making the PR2 testbed publicly available at <a
-                href="https://pr2-humanoid.github.io/">PR2 website</a>,
-              we aim to further advance education and training in humanoid robotics.
+              This paper presents the development of a Physics-realistic and Photo-realistic humanoid robot testbed,
+              PR2, to
+              facilitate collaborative research between Embodied Artificial
+              Intelligence (Embodied AI) and robotics. PR2 offers high-quality
+              scene rendering and robot dynamic simulation, enabling (i) the
+              creation of diverse scenes using various digital assets, (ii) the
+              integration of advanced perception or foundation models, and
+              (iii) the implementation of planning and control algorithms for
+              dynamic humanoid robot behaviors based on environmental
+              feedback. The beta version of PR2 has been deployed for
+              the simulation track of a nationwide full-size humanoid robot
+              competition for college students, attracting 137 teams and over
+              400 participants within four months. This competition covered
+              traditional tasks in bipedal walking, as well as novel challenges in
+              loco-manipulation and language-instruction-based object search,
+              marking a first for public college robotics competitions. A
+              retrospective analysis of the competition suggests that future
+              events should emphasize the integration of locomotion with ma-
+              nipulation and perception. By making the <a href="https://pr2-humanoid.github.io/"> PR2 testbed
+              </a>publicly, we aim to further advance education and training in humanoid robotics.
             </p>
           </div>
         </div>
@@ -327,6 +363,38 @@
       <div class="columns is-centered">
         <div class="column is-four-fifths">
           <h3 class="title is-4" style="margin-top: 2rem;">Competition Trials</h3>
+          <div style="text-align: left; max-width: 100%;">
+            <p style="text-align: justify;">
+              To comprehensively address humanoid locomotion, manipulation, and the integration of AI
+              techniques while maintaining a moderate level of difficulty, we designed six distinct
+              tasks; see Tab. for a detailed description. </p>
+          </div>
+
+
+
+          <br>
+
+          <div class="card">
+            <br>
+            <img src="assets/task_spec.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">
+                <div class="color-boxes">
+                  <span class="color-box box-1"></span>,
+                  <span class="color-box box-2"></span> and
+                  <span class="color-box box-3"></span> indicate
+                  score assignments related to humanoid robot’s locomotion, manipulation, and perception, respectively.
+                </div>
+              </h5>
+              <a href="https://github.com/pr2-humanoid/PR2-Platform" class="btn btn-info">Try It Out</a>
+            </div>
+          </div>
+
+
+
+
+
+          <br>
           <div class="container">
             <div class="row">
               <a href="assets/demo/task1.mp4" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
@@ -340,8 +408,8 @@
                       </video>
                       <div style="text-align: center; margin-top: 0.5rem;">Task 1: Uneven terrain walking</div>
                     </div>
-                  </div> 
-                </div> 
+                  </div>
+                </div>
               </a>
 
               <a href="assets/demo/task2.mp4" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
@@ -355,8 +423,8 @@
                       </video>
                       <div style="text-align: center; margin-top: 0.5rem;">Task 2: Valve turning</div>
                     </div>
-                  </div> 
-                </div> 
+                  </div>
+                </div>
               </a>
 
               <a href="assets/demo/task3.mp4" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
@@ -370,8 +438,8 @@
                       </video>
                       <div style="text-align: center; margin-top: 0.5rem;">Task 3: Vertical jumping</div>
                     </div>
-                  </div> 
-                </div> 
+                  </div>
+                </div>
               </a>
 
             </div>
@@ -382,13 +450,13 @@
                     data-mdb-ride="carousel">
 
                     <div class="carousel-item active">
-                      <video class="img-fluid rounded" autoplay loop muted loading="lazy"> 
+                      <video class="img-fluid rounded" autoplay loop muted loading="lazy">
                         <source src="assets/demo/task4.mp4" type="video/mp4" />
                       </video>
                       <div style="text-align: center; margin-top: 0.5rem;">Task 4: Slope climbing</div>
                     </div>
-                  </div> 
-                </div> 
+                  </div>
+                </div>
               </a>
 
               <a href="assets/demo/task5.mp4" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
@@ -403,8 +471,8 @@
                       <div style="text-align: center; margin-top: 0.5rem;">Task 5: Step climbing
                         and button pressing</div>
                     </div>
-                  </div> 
-                </div> 
+                  </div>
+                </div>
               </a>
 
               <a href="assets/demo/task6.mp4" data-toggle="lightbox" data-gallery="gallery" class="col-md-4">
@@ -419,24 +487,15 @@
                       <div style="text-align: center; margin-top: 0.5rem;">Task 6: Indoor random task
                         and motion planning</div>
                     </div>
-                  </div> 
-                </div> 
+                  </div>
+                </div>
               </a>
             </div>
           </div>
-          <div style="text-align: left; max-width: 100%;">
-            <p style="text-align: justify;">
-              We organized a nationwide college student humanoid robot competition to conduct a pilot study on PR2 for
-              the online virtual challenge. The competition ultimately attracted 137 teams, each with up to four
-              students. To comprehensively address humanoid locomotion, manipulation, and the integration of AI
-              techniques while
-              maintaining a moderate level of difficulty, we designed six distinct tasks. These tasks are operated
-              independently rather than sequentially, ensuring that participants
-              who may struggle with one aspect still have opportunities to engage with other challenges. For example,
-              difficulties in manipulation in Task 2 do not impact the performance in subsequent tasks involving
-              locomotion, such as jumping (Task 3) and climbing slopes and stairs (Task 4 and 5).
-            </p>
-          </div>
+
+
+
+
         </div>
       </div>
 
@@ -447,17 +506,29 @@
           <h3 class="title is-4" style="margin-top: 2rem;">System Architecture</h3>
           <div style="display: flex; align-items: stretch; justify-content: space-between;">
             <div style="width: 60%; padding-right: 10px; font-size: 1em; text-align: left;">
-              <p><b>PR2</b> is built on top of <a target="_blank" href="https://developer.nvidia.com/isaac-sim">Isaac
-                  Sim</a>,
-                which leverages advanced GPU-enabled graphics and physics simulation with Nvidia PhysX 5,
-                enabling users to investigate and test robotic skills in a physics-realistic and photo-realistic
-                simulation environment. The testbed consists of four major components: (i) the rendering module and (ii)
-                the physics simulation
-                module, built on Nvidia’s Omniverse RTX Renderer and PhysX SDK, respectively. These modules support the
-                import of digital assets to create diverse task environments and simulate
-                effects such as forces and system dynamics. Additionally, (iii) built-in model predictive
-                and whole-body controllers and (iv) high-level planners are provided for beginners but can be replaced
-                by more advanced users as needed.
+              <p>
+
+
+
+
+                <b>PR2</b> is built on top of <a target="_blank" href="https://developer.nvidia.com/isaac-sim"> NVIDIA
+                  Isaac Sim </a>, which leverages
+                advanced GPU-enabled graphics and physics simulation with
+                Nvidia PhysX 5, enabling users to investigate and test robotic
+                skills in a physics-realistic and photo-realistic simulation envi-
+                ronment.
+                Designed to be modular, PR2 simplifies workflows in
+                interacting with humanoid robots with an easy-to-use interface
+                for users who can incorporate their own modules to the
+                platform. By extending the core components of NVIDIA Isaac
+                Sim, PR2 consists of three main modules : (i) The task module and (ii) the physics simulation
+                module support the import of various digital assets to create diverse
+                task environments and simulate physical effects such as forces
+                and system dynamics. Additionally, (iii) built-in controller module
+                includes model predictive and whole-body controllers and high-level
+                planners are provided for beginners but can be replaced by more
+                advanced users as needed
+
               </p>
             </div>
             <div style="width: 60%; display: flex; align-items: stretch;">
@@ -473,9 +544,9 @@
           <h3 class="title is-4" style="margin-top: 2rem;">Acknowledgments</h3>
           <div class="has-text-centered">
             <p style="text-align: justify;">
-              This work was supported in part by
-              the National Natural Science Foundation of China (No.
-              62403064). We thank the engineering team from Leju Robotics
+              This work was supported in part by the
+              National Natural Science Foundation of China (No. 62403064,
+              62403063). We thank the engineering team from Leju Robotics
               for technical support, Ms. Zhen Chen from BIGAI for refining
               the figures, and all colleagues from the BIGAI TongVerse
               project for fruitful discussions and help on simulation devel-
@@ -487,20 +558,8 @@
 
     </div>
   </section>
-  <script>
-    // $(document).on("click", '[data-toggle="lightbox"]', function (event) {
-    //   event.preventDefault();
-    //   $(this).ekkoLightbox();
-    // });
-    //     document.addEventListener("DOMContentLoaded", function() {
-    //   const gifs = document.querySelectorAll('img[src$=".gif"]');
-    //   gifs.forEach(gif => {
-    //     gif.addEventListener('load', function() {
-    //       // Your code to handle GIF loading
-    //     });
-    //   });
-    // });
-  </script>
+ 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
 
 </body>
