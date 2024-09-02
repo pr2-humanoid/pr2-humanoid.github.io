@@ -2,13 +2,70 @@
   <b><tt>PR2</tt>: A Physics- and Photo-realistic Humanoid Testbed with Pilot Study in Competition</b>
 </h2>
 
+<!-- <div align="center" margin-bottom="6em"> 
+</div> -->
+
+<!-- <div align="center" margin-bottom="6em">
+Hangxin Liu, Qi Xie, Zeyu Zhang, Tao Yuan, Xiaokun Leng, Lining Sun <br/> Song-Chun Zhu, Jingwen Zhang<sup>✉️</sup>, Zhicheng He</a><sup>✉️</sup>,Yao Su</a><sup>✉️ </sup>
+</div> -->
+
+<!-- &nbsp; -->
+
 <div align="center" margin-bottom="6em"> 
+<!-- <h3 class="title is-4 conference-authors"><a target="_blank" href=" "> </a></h3> -->
+<!-- <div class="is-size-5 publication-authors"> -->
+  <span class="author-block">
+    <a target="_blank" href="https://liuhx111.github.io/">Hangxin Liu</a><sup>1</sup>,</span>
+  <span class="author-block">
+    <a target="_blank" href="https://github.com/sudoku77">Qi Xie</a><sup>1</sup>,</span>
+  <span class="author-block">
+    <a target="_blank" href="https://zeyuzhang.com">Zeyu Zhang</a><sup>1</sup>,</span>
+  <span class="author-block">
+    <a target="_blank" href="https://i.yt.sb/">Tao Yuan</a><sup>1</sup>,</span>
+  <span class="author-block">
+    <a target="_blank"  >Xiaokun Leng</a><sup>2</sup>,</span>
+  <span class="author-block">
+    <a target="_blank"  >Lining Sun</a><sup>3,4</sup>,</span> 
+  <span class="author-block">
+    <a target="_blank" href="https://www.zhusongchun.net/">Song-Chun Zhu</a><sup>1,5,6</sup>,</span>
+  <span class="author-block">
+    <a target="_blank" href="https://jingwen-zhang-aaron.github.io/">Jingwen Zhang</a><sup>1✉️
+    </sup>,</span>
+  <span class="author-block">
+    <a target="_blank" >Zhicheng He</a><sup>2✉️ </sup>,</span>
+  <span class="author-block">
+    <a target="_blank" href="https://yaosu.info/">Yao Su</a><sup>1✉️ </sup>,</span>
+
+ 
+<!-- <div class="is-size-5 publication-authors"> -->
+<p style="padding: 0.3em 0 0 0;"></p>
+<span class="author-block"><sup>1</sup>State Key Laboratory of General Artificial Intelligence, Beijing
+  Institute for General Artificial Intelligence (BIGAI), </span>
+<span class="author-block"><sup>2</sup>Department of Computer Science,
+  Harbin Institute of Technology, Harbin,
+</span>
+<span class="author-block"><sup>3</sup>School of Mechatronics Engineering, Harbin Institute of
+  Technology,
+</span>
+<span class="author-block"><sup>4</sup>Jiangsu Provincial Key Laboratory of Advanced Robotics, School of
+  Mechanical and Electric Engineering, Soochow University, </span>
+<span class="author-block"><sup>5</sup> Institute for Artificial Intelligence and School
+  of Artificial Intelligence, Peking University, </span>
+<br />
+<span class="author-block"><sup>6</sup>Department of Automation, Tsinghua University</span>
+
+
+<p style="font-size: 0.9em; padding: 0.5em 0 0 0;">✉️ indicates corresponding author</p>
 </div>
 
-<div align="center" margin-bottom="6em">
-Hangxin Liu, Qi Xie, Zeyu Zhang, Tao Yuan, Xiaokun Leng, Lining Sun <br/> Song-Chun Zhu, Jingwen Zhang<sup>✉️</sup>, Zhicheng He</a><sup>✉️</sup>,Yao Su</a><sup>✉️ </sup>
 </div>
-&nbsp;
+
+     
+  </div>
+</div>
+ 
+
+
 
 <div align="center">
     <a href=" " target="_blank">
