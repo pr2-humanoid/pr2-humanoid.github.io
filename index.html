@@ -23,136 +23,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <style>
-    .btn {
-      background-color: Gray;
-      border: none;
-      color: white;
-      padding: 12px 16px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-
-    .is-rounded {
-      border-radius: 12px;
-    }
-
-    /* Darker background on mouse-over */
-    .btn:hover {
-      background-color: Silver;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    .centered {
-      text-align: center;
-    }
-
-    .publication-video {
-      position: relative;
-      width: 100%;
-      height: 0;
-      padding-bottom: 56.25%;
-
-      overflow: hidden;
-      border-radius: 10px !important;
-    }
-
-    .publication-video iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    img.responsive-image {
-      width: 80%;
-      display: block;
-      margin: 0 auto;
-    }
-
-    /* For smaller screens */
-    @media (max-width: 768px) {
-      img.responsive-image {
-        width: 100%;
-        /* Full width on small screens */
-      }
-    }
-
-    /* For very large screens */
-    @media (min-width: 1200px) {
-      img.responsive-image {
-        width: 60%;
-        /* Smaller width on large screens */
-      }
-    }
-
-    .section,
-    .hero {
-      width: 80%;
-      margin: 0 auto;
-    }
-
-    .hero-body,
-    .container {
-      width: 100%;
-    }
-
-    .columns,
-    .rows {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .column,
-    .row {
-      width: 100%;
-    }
-
-    .title.is-1,
-    .title.is-4 {
-      text-align: center;
-    }
-
-    .publication-links,
-    .publication-authors {
-      text-align: center;
-    }
-
-    .color-boxes {
-      display: flex;
-      /* Align boxes horizontally */
-      gap: 10px;
-      /* Space between boxes */
-    }
-
-    .color-box {
-      width: 30px;
-      /* Width of each box */
-      height: 20px;
-      /* Height of each box */
-
-    }
-
-    .box-1 {
-      background-color: #b3b7ee;
-      /* Color of the first box */
-    }
-
-    .box-2 {
-      background-color: #ea9ab2;
-      /* Color of the second box */
-    }
-
-    .box-3 {
-      background-color: #ebd9fc;
-      /* Color of the third box */
-    }
+ 
   </style>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
@@ -240,7 +111,7 @@
               <div class="publication-links">
                 <!-- Arxiv Link -->
                 <span class="link-block">
-                  <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
+                  <a target="_blank" href="https://arxiv.org/abs/2409.01559" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon"><i class="fas fa-file"></i></span>
                     <span>arXiv</span>
                   </a>
@@ -272,28 +143,7 @@
     </div>
   </section>
 
-  <!-- <section class="hero teaser" style="margin-top: -1rem;">
-    <div class="container is-fullhd">
-      <div class="hero-body">
-        <div class="container">
-          <div class="has-text-centered" style="padding: 0 1em;">
-            <img src="assets/teaser.png" style="width: 80%; display: block; margin: 0 auto;" />
 
-            <div class="content has-text-justified " style="width: 80%; margin: 1em auto;">
-              <p>We introduces PR2, a humanoid robot testbed designed for both entry-level students and professional
-                users with supports in
-
-                <span style="color: #EC407A; font-weight: bold">bipedal locomotion</span>,
-                <span style="color: #03A9F4; font-weight: bold">multi-modal manipulation</span> and
-                <span style="color: #FF7043; font-weight: bold">interaction with vision and language foundation
-                  models</span>.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
 
 
   <section class="section " style="margin-top: -2rem;">
@@ -333,8 +183,7 @@
               loco-manipulation and language-instruction-based object search,
               marking a first for public college robotics competitions. A
               retrospective analysis of the competition suggests that future
-              events should emphasize the integration of locomotion with ma-
-              nipulation and perception. By making the <a href="https://pr2-humanoid.github.io/"> PR2 testbed
+              events should emphasize the integration of locomotion with manipulation and perception. By making the <a href="https://pr2-humanoid.github.io/"> PR2 testbed
               </a>publicly, we aim to further advance education and training in humanoid robotics.
             </p>
           </div>
@@ -499,8 +348,7 @@
                   Isaac Sim </a>, which leverages
                 advanced GPU-enabled graphics and physics simulation with
                 Nvidia PhysX 5, enabling users to investigate and test robotic
-                skills in a physics-realistic and photo-realistic simulation envi-
-                ronment. By extending the core components of NVIDIA Isaac
+                skills in a physics-realistic and photo-realistic simulation environment. By extending the core components of NVIDIA Isaac
                 Sim, PR2 consists of three main modules : (i) The task module and (ii) the physics simulation
                 module support the import of various digital assets to create diverse
                 task environments and simulate physical effects such as forces
