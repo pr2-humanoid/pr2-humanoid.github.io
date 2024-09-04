@@ -30,28 +30,10 @@
   <link rel="stylesheet" href="static/css/index.css">
   <script src="https://kit.fontawesome.com/b25d0fd750.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <script>
-    function UpdateTaskIllustration() {
-      var task = document.getElementById("illu-task").value;
-      console.log("illu", task)
-      var img = document.getElementById("task-illustration");
-      img.src = "assets/" + "illu-" + task + ".png"
-    }
-
-    function UpdateTaskDemonstration() {
-      var task = document.getElementById("demo-task").value;
-      console.log("demo", task)
-      var video = document.getElementById("task-demonstration");
-      video.src = "assets/" + "demo-" + task + ".mp4"
-      video.playbackRate = 1.75;
-      video.play();
-    }
-  </script>
-
+ 
 </head>
 
-<body onload="UpdateTaskIllustration(); UpdateTaskDemonstration();">
+<body>
   <!-- MDB -->
 
 
