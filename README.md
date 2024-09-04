@@ -61,12 +61,12 @@
  
   
 <div align="center">
-    <a href=" " target="_blank">
+    <a href="https://arxiv.org/abs/2409.01559" target="_blank">
     <img src="https://img.shields.io/badge/Paper-arXiv-green" alt="Paper arXiv"></a>
     <a href="https://github.com/pr2-humanoid/PR2-Platform" target="_blank">
     <img src="https://img.shields.io/badge/Code-PR2-9cf" alt="Github code"/></a> 
     <a href="https://www.youtube.com/watch?v=VycZ9Po9hNg" target="_blank">
-    <img src="https://img.shields.io/badge/Data-Demos-9966ff" alt="Demos"/></a>
+    <img src="https://img.shields.io/badge/Video-Demos-9966ff" alt="Demos"/></a>
     
 </div>
 &nbsp;
