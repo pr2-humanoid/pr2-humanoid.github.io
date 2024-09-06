@@ -35,7 +35,7 @@
   Institute for General Artificial Intelligence (BIGAI) </span>
   <br />
 <span class="author-block"><sup>2</sup>Department of Computer Science
-  Harbin Institute of Technology, Harbin
+  Harbin Institute of Technology 
 </span>
 <br />
 <span class="author-block"><sup>3</sup>School of Mechatronics Engineering, Harbin Institute of
